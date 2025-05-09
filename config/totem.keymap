@@ -12,11 +12,11 @@
 
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/totem.h"
+#include "keys_sv.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "keys_sv.h"
 
 #define BASE 0
 #define NAV  1
@@ -208,10 +208,10 @@
 
         COLEMAK {
             bindings = <
-        &kp Q  &kp W  &kp F   &kp P   &kp G     &kp J   &kp L   &kp U   &kp Y   &trans
-        &kp A  &kp R  &kp S   &kp T   &kp D     &kp H   &kp N   &kp E   &kp I   &kp O
-&trans  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp K   &kp M   &trans  &trans  &trans  &trans
-                      &trans  &trans  &trans    &trans  &trans  &trans
+        &kp Q  &kp W  &kp F   &kp P   &kp G     &kp J      &kp L   &kp U            &kp Y            &kp SV_A_RING
+        &kp A  &kp R  &kp S   &kp T   &kp D     &kp H      &kp N   &kp E            &kp I            &kp O
+&trans  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp K      &kp M   &kp SV_O_UMLAUT  &kp SV_A_UMLAUT  &trans         &trans
+                      &trans  &trans  &trans    &kp ENTER  &trans  &trans
             >;
         };
 
