@@ -210,17 +210,17 @@
             bindings = <
            &kp Q         &kp W            &kp F              &kp P      &kp G        &kp J      &kp L         &kp U                      &kp Y                       &kp SV_A_RING
            &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &kp T      &kp D        &kp H      &kp N         &hmr RIGHT_SHIFT E         &hmr RIGHT_ALT I            &hmr RCTRL O
-&lt 4 TAB  &kp Z         &kp X            &kp C              &kp V      &kp B        &kp K      &kp M         &hmr SV_O_UMLAUT SV_COMMA  &hmr SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH   &hmr SEMI COLON
+&lt 4 TAB  &kp Z         &kp X            &kp C              &kp V      &kp B        &kp K      &kp M         &hmr SV_O_UMLAUT SV_COMMA  &hmr SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH   &hmr SV_SEMICOLON SV_COLON
                                           &mo 2              &lt 1 ESC  &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &tog 3
             >;
         };
 
         Programming {
             bindings = <
-        &kp AT    &kp EXCLAMATION  &kp DOLLAR         &kp PERCENT  &kp AMPERSAND    &kp EQUAL      &kp ASTERISK      &kp BSLH        &kp QUESTION  &hmr GRAVE SV_ACUTE
-        &kp LBKT  &kp LBRC         &kp LPAR           &kp LT       &kp FSLH         &kp BACKSLASH  &kp GREATER_THAN  &kp RPAR        &kp RBRC      &kp RBKT
-&trans  &trans    &trans           &kp DOUBLE_QUOTES  &kp SV_SQT   &trans           &kp SV_PLUS    &kp MINUS         &kp UNDERSCORE  &kp PIPE      &trans               &trans
-                                   &trans             &trans       &trans           &trans         &trans            &trans
+        &kp AT               &kp SV_EXCL        &kp SV_DOLLAR            &kp SV_PERCENT    &kp SV_AMPERSAND    &kp SV_EQUAL      &kp SV_ASTERISK      &kp SV_BACKSLASH          &kp SV_QUESTION  &hmr SV_GRAVE SV_ACUTE
+        &kp SV_LEFT_BRACKET  &kp SV_LEFT_BRACE  &kp SV_LEFT_PARENTHESIS  &kp SV_LESS_THAN  &kp SV_FSLH         &kp SV_BACKSLASH  &kp SV_GREATER_THAN  &kp SV_RIGHT_PARENTHESIS  &kp SV_RBRC      &kp SV_RBKT
+&trans  &trans               &trans             &kp SV_DOUBLE_QUOTES     &kp SV_SQT        &kp SV_CARET        &kp SV_PLUS       &kp SV_MINUS         &kp SV_UNDER              &kp SV_PIPE      &trans                  &trans
+                                                &trans                   &trans            &trans              &trans            &trans               &trans
             >;
         };
 
@@ -237,10 +237,10 @@
         digits {
             label = "Digits";
             bindings = <
-        &kp PIPE                &kp DOLLAR             &kp LEFT_BRACE               &kp RIGHT_BRACE                 &press_two_keys GREATER_THAN EQUAL    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp SEMICOLON
-        &hml LCTRL EXCLAMATION  &hml LEFT_ALT AT_SIGN  &hml LSHFT LEFT_PARENTHESIS  &lt 2 RIGHT_PARENTHESIS         &press_two_keys MINUS GREATER_THAN    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY
-&trans  &kp AMPERSAND           &kp LCTRL              &mt LESS_THAN LEFT_BRACKET   &mt GREATER_THAN RIGHT_BRACKET  &press_two_keys LESS_THAN EQUAL       &kp MINUS  &kp N1  &kp N2  &kp N3  &kp PERIOD       &kp SLASH
-                                                       &trans                       &trans                          &trans                                &trans     &kp N0  &to 0
+        &kp PIPE                &kp DOLLAR             &kp LEFT_BRACE               &kp RIGHT_BRACE                 &press_two_keys GREATER_THAN EQUAL    &kp SV_PLUS   &kp N7  &kp N8  &kp N9  &kp SV_SEMICOLON
+        &hml LCTRL EXCLAMATION  &hml LEFT_ALT AT_SIGN  &hml LSHFT LEFT_PARENTHESIS  &lt 2 RIGHT_PARENTHESIS         &press_two_keys MINUS GREATER_THAN    &kp SV_EQUAL  &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY
+&trans  &kp SV_AMPERSAND        &kp LCTRL              &mt LESS_THAN LEFT_BRACKET   &mt GREATER_THAN RIGHT_BRACKET  &press_two_keys LESS_THAN EQUAL       &kp SV_MINUS  &kp N1  &kp N2  &kp N3  &kp SV_PERIOD     &kp SV_SLASH
+                                                       &trans                       &trans                          &trans                                &trans        &kp N0  &to 0
             >;
         };
 
