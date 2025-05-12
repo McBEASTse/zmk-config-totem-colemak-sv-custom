@@ -230,7 +230,7 @@
             >;
         };
 
-        Programming {
+        ProgrammingWin {
             bindings = <
         &kp AT               &kp SV_EXCL        &kp SV_DOLLAR            &kp SV_PERCENT    &kp SV_AMPERSAND    &kp SV_EQUAL      &kp SV_ASTERISK      &kp SV_BACKSLASH          &kp SV_QUESTION  &hmr SV_GRAVE SV_ACUTE
         &kp SV_LEFT_BRACKET  &kp SV_LEFT_BRACE  &kp SV_LEFT_PARENTHESIS  &kp SV_LESS_THAN  &kp SV_FSLH         &kp SV_BACKSLASH  &kp SV_GREATER_THAN  &kp SV_RIGHT_PARENTHESIS  &kp SV_RBRC      &kp SV_RBKT
@@ -252,10 +252,10 @@
         digits {
             label = "Digits";
             bindings = <
-        &kp PIPE                &kp DOLLAR             &kp LEFT_BRACE               &kp RIGHT_BRACE                 &press_two_keys GREATER_THAN EQUAL    &kp SV_PLUS   &kp N7  &kp N8  &kp N9  &kp SV_SEMICOLON
-        &hml LCTRL EXCLAMATION  &hml LEFT_ALT AT_SIGN  &hml LSHFT LEFT_PARENTHESIS  &lt 2 RIGHT_PARENTHESIS         &press_two_keys MINUS GREATER_THAN    &kp SV_EQUAL  &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY
-&trans  &kp SV_AMPERSAND        &kp LCTRL              &mt LESS_THAN LEFT_BRACKET   &mt GREATER_THAN RIGHT_BRACKET  &press_two_keys LESS_THAN EQUAL       &kp SV_MINUS  &kp N1  &kp N2  &kp N3  &kp SV_PERIOD     &kp SV_SLASH
-                                                       &trans                       &trans                          &trans                                &trans        &kp N0  &to 0
+        &trans  &trans  &trans  &trans  &trans    &kp SV_PLUS   &kp N7  &kp N8  &kp N9  &kp SV_SEMICOLON
+        &trans  &trans  &trans  &trans  &trans    &kp SV_EQUAL  &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY
+&trans  &trans  &trans  &trans  &trans  &trans    &kp SV_MINUS  &kp N1  &kp N2  &kp N3  &kp SV_PERIOD     &kp SV_SLASH
+                        &mo 2   &mo 1   &trans    &trans        &kp N0  &to 0
             >;
         };
 
@@ -266,6 +266,15 @@
         &trans      &trans  &trans        &trans      &trans        &kp C_MUTE    &kp C_PP      &trans        &trans      &trans
 &trans  &bt BT_CLR  &trans  &out OUT_TOG  &bt BT_PRV  &bt BT_NXT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &trans   &trans
                             &trans        &trans      &trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
+            >;
+        };
+
+        ProgrammingMac {
+            bindings = <
+        &kp SV_AT            &kp SV_EXCL        &kp SV_DOLLAR            &kp SV_PERCENT    &kp SV_AMPERSAND    &kp SV_EQUAL      &kp SV_ASTERISK      &kp SV_BACKSLASH          &kp SV_QUESTION  &hmr SV_GRAVE SV_ACUTE
+        &kp SV_LEFT_BRACKET  &kp SV_LEFT_BRACE  &kp SV_LEFT_PARENTHESIS  &kp SV_LESS_THAN  &kp SV_FSLH         &kp SV_BACKSLASH  &kp SV_GREATER_THAN  &kp SV_RIGHT_PARENTHESIS  &kp SV_RBRC      &kp SV_RBKT
+&trans  &trans               &trans             &kp SV_DOUBLE_QUOTES     &kp SV_SQT        &kp SV_CARET        &kp SV_PLUS       &kp SV_MINUS         &kp SV_UNDER              &kp SV_PIPE      &trans                  &trans
+                                                &trans                   &trans            &trans              &trans            &trans               &trans
             >;
         };
     };
