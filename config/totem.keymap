@@ -232,7 +232,7 @@
 
         ProgrammingWin {
             bindings = <
-        &kp AT               &kp SV_EXCL        &kp SV_DOLLAR            &kp SV_PERCENT    &kp SV_AMPERSAND    &kp SV_EQUAL      &kp SV_ASTERISK      &kp SV_BACKSLASH          &kp SV_QUESTION  &hmr SV_GRAVE SV_ACUTE
+        &kp SV_AT            &kp SV_EXCL        &kp SV_DOLLAR            &kp SV_PERCENT    &kp SV_AMPERSAND    &kp SV_EQUAL      &kp SV_ASTERISK      &kp SV_BACKSLASH          &kp SV_QUESTION  &hmr SV_GRAVE SV_ACUTE
         &kp SV_LEFT_BRACKET  &kp SV_LEFT_BRACE  &kp SV_LEFT_PARENTHESIS  &kp SV_LESS_THAN  &kp SV_FSLH         &kp SV_BACKSLASH  &kp SV_GREATER_THAN  &kp SV_RIGHT_PARENTHESIS  &kp SV_RBRC      &kp SV_RBKT
 &trans  &trans               &trans             &kp SV_DOUBLE_QUOTES     &kp SV_SQT        &kp SV_CARET        &kp SV_PLUS       &kp SV_MINUS         &kp SV_UNDER              &kp SV_PIPE      &trans                  &trans
                                                 &trans                   &trans            &trans              &trans            &trans               &trans
