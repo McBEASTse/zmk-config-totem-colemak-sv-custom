@@ -223,7 +223,7 @@
 
         COLEMAK {
             bindings = <
-           &kp Q                   &kp W            &kp F              &kp P      &kp G        &kp J      &kp L         &kp U                      &kp Y                       &kp SV_A_RING
+           &lt 3 Q                 &kp W            &kp F              &kp P      &kp G        &kp J      &kp L         &kp U                      &kp Y                       &kp SV_A_RING
            &hml LCTRL A            &hml LEFT_ALT R  &hml LEFT_SHIFT S  &kp T      &kp D        &kp H      &kp N         &hmr RIGHT_SHIFT E         &hmr RIGHT_ALT I            &hmr RCTRL O
 &lt 4 TAB  &hml LEFT_COMMAND SV_Z  &kp X            &kp C              &kp V      &kp B        &kp K      &kp M         &hmr SV_O_UMLAUT SV_COMMA  &hmr SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH   &hmr SV_SEMICOLON SV_COLON
                                                     &mo 2              &lt 1 ESC  &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &tog 3
