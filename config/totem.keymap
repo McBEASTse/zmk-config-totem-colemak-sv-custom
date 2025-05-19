@@ -65,7 +65,7 @@
         };
 
         opt_backspace {
-            bindings = <&kp LA(BACKSPACE)>;
+            bindings = <&kp LC(BACKSPACE)>;
             key-positions = <16 17 18>;
             timeout-ms = <70>;
         };
@@ -87,17 +87,17 @@
         };
 
         Copy {
-            bindings = <&kp LS(C)>;
+            bindings = <&kp LC(C)>;
             key-positions = <22 23 24>;
         };
 
         Paste {
-            bindings = <&kp LS(SV_P)>;
+            bindings = <&kp LC(P)>;
             key-positions = <27 28 29>;
         };
 
         Cut {
-            bindings = <&kp LS(SV_X)>;
+            bindings = <&kp LC(X)>;
             key-positions = <21 22 23 24>;
         };
     };
