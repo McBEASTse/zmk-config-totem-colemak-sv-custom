@@ -62,14 +62,14 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
             timeout-ms = <70>;
-            require-prior-idle-ms = <600>;
+            require-prior-idle-ms = <350>;
         };
 
         opt_backspace {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <16 17 18>;
             timeout-ms = <70>;
-            require-prior-idle-ms = <600>;
+            require-prior-idle-ms = <350>;
         };
 
         to_digits_layer {
