@@ -192,12 +192,11 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <100>;
-            require-prior-idle-ms = <250>;
+            tapping-term-ms = <120>;
+            quick-tap-ms = <80>;
+            require-prior-idle-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <KEYS_R THUMBS>;
-            hold-trigger-on-release;
         };
 
         hmr: hmr {
@@ -206,12 +205,11 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <100>;
-            require-prior-idle-ms = <250>;
+            tapping-term-ms = <120>;
+            quick-tap-ms = <80>;
+            require-prior-idle-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <KEYS_L THUMBS>;
-            hold-trigger-on-release;
         };
 
         comment_or: comment_or {
