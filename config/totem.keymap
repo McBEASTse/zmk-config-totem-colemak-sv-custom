@@ -196,7 +196,7 @@
             quick-tap-ms = <80>;
             require-prior-idle-ms = <300>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <KEYS_R THUMBS 13 12 11 10>;
+            hold-trigger-key-positions = <KEYS_R THUMBS 12 11 10 21>;
         };
 
         hmr: hmr {
@@ -209,7 +209,7 @@
             quick-tap-ms = <80>;
             require-prior-idle-ms = <300>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <KEYS_L THUMBS 16 17 18 19 28 29 9>;
+            hold-trigger-key-positions = <KEYS_L THUMBS 17 18 19 28 29 9 31>;
         };
 
         comment_or: comment_or {
