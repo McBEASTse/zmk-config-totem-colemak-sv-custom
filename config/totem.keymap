@@ -194,9 +194,9 @@
             #binding-cells = <2>;
             tapping-term-ms = <120>;
             quick-tap-ms = <80>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <300>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-key-positions = <KEYS_R THUMBS 13 12 11 10>;
         };
 
         hmr: hmr {
@@ -207,9 +207,9 @@
             #binding-cells = <2>;
             tapping-term-ms = <120>;
             quick-tap-ms = <80>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <300>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-key-positions = <KEYS_L THUMBS 16 17 18 19 28 29 9>;
         };
 
         comment_or: comment_or {
