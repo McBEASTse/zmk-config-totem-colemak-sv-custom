@@ -218,9 +218,9 @@
 
         COLEMAK-DH {
             bindings = <
-           &lt 3 Q       &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U               &kp Y             &none
-           &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &kp T      &kp G        &kp M      &kp N         &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RCTRL O
-&lt 4 TAB  &none         &kp X            &kp C              &kp D      &kp V        &kp K      &kp H         &none               &none             &kp SV_SLASH  &none
+           &lt 3 Q       &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U                     &kp Y                      &mt SV_A_RING DELETE
+           &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &kp T      &kp G        &kp M      &kp N         &hmr RIGHT_SHIFT E        &hmr RIGHT_ALT I           &hmr RCTRL O
+&lt 4 TAB  &none         &kp X            &kp C              &kp D      &kp V        &kp K      &kp H         &mt SV_O_UMLAUT SV_COMMA  &mt SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH          &mt SV_SEMICOLON SV_COLON
                                           &mo 2              &lt 1 ESC  &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &tog 3
             >;
         };
