@@ -48,10 +48,10 @@
 //MAKE_HRM(hml_layer, &mo, &kp, KEYS_R THUMBS) // switch layer like HRM
 
 &mt {
-    quick-tap-ms = <100>;
+    quick-tap-ms = <80>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    tapping-term-ms = <230>;
 };
 
 / {
@@ -211,19 +211,6 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <KEYS_L THUMBS 17 18 19>;
         };
-
-        mt: mt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT";
-            bindings = <&none>, <&none>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <230>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <28 29 9 31>;
-            require-prior-idle-ms = <120>;
-            quick-tap-ms = <80>;
-        };
     };
 
     keymap {
@@ -231,10 +218,10 @@
 
         COLEMAK-DH {
             bindings = <
-           &lt 3 Q                &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U                     &kp Y                      &mt DELETE SV_A_RING
-           &hml LCTRL A           &hml LEFT_ALT R  &hml LEFT_SHIFT S  &kp T      &kp G        &kp M      &kp N         &hmr RIGHT_SHIFT E        &hmr RIGHT_ALT I           &hmr RCTRL O
-&lt 4 TAB  &mt LEFT_COMMAND SV_Z  &kp X            &kp C              &kp D      &kp V        &kp K      &kp H         &mt SV_O_UMLAUT SV_COMMA  &mt SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH          &mt SV_SEMICOLON SV_COLON
-                                                   &mo 2              &lt 1 ESC  &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &tog 3
+           &lt 3 Q       &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U               &kp Y             &none
+           &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &kp T      &kp G        &kp M      &kp N         &hmr RIGHT_SHIFT E  &hmr RIGHT_ALT I  &hmr RCTRL O
+&lt 4 TAB  &none         &kp X            &kp C              &kp D      &kp V        &kp K      &kp H         &none               &none             &kp SV_SLASH  &none
+                                          &mo 2              &lt 1 ESC  &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &tog 3
             >;
         };
 
