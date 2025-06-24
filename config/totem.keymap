@@ -218,10 +218,10 @@
 
         COLEMAK-DH {
             bindings = <
-           &lt 3 Q       &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U                     &kp Y                      &mt DELETE SV_A_RING
-           &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &kp T      &kp G        &kp M      &kp N         &hmr RIGHT_SHIFT E        &hmr RIGHT_ALT I           &hmr RCTRL O
-&lt 4 TAB  &none         &kp X            &kp C              &kp D      &kp V        &kp K      &kp H         &mt SV_O_UMLAUT SV_COMMA  &mt SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH          &mt SV_SEMICOLON SV_COLON
-                                          &mo 2              &lt 1 ESC  &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &tog 3
+           &lt 3 Q            &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U                     &kp Y                      &mt DELETE SV_A_RING
+           &hml LCTRL A       &hml LEFT_ALT R  &hml LEFT_SHIFT S  &kp T      &kp G        &kp M      &kp N         &hmr RIGHT_SHIFT E        &hmr RIGHT_ALT I           &hmr RCTRL O
+&lt 4 TAB  &mt LEFT_WIN SV_Z  &kp X            &kp C              &kp D      &kp V        &kp K      &kp H         &mt SV_O_UMLAUT SV_COMMA  &mt SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH          &mt SV_SEMICOLON SV_COLON
+                                               &mo 2              &lt 1 ESC  &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &tog 3
             >;
         };
 
@@ -229,7 +229,7 @@
             bindings = <
         &kp SV_AT            &kp SV_EXCL        &kp SV_DOLLAR            &kp SV_PERCENT    &kp SV_AMPERSAND    &kp SV_EQUAL      &kp SV_ASTERISK      &kp SV_BACKSLASH          &kp SV_QUESTION  &hmr SV_GRAVE SV_ACUTE
         &kp SV_LEFT_BRACKET  &kp SV_LEFT_BRACE  &kp SV_LEFT_PARENTHESIS  &kp SV_LESS_THAN  &kp SV_FSLH         &kp SV_BACKSLASH  &kp SV_GREATER_THAN  &kp SV_RIGHT_PARENTHESIS  &kp SV_RBRC      &kp SV_RBKT
-&trans  &trans               &kp SV_POUND       &kp SV_DOUBLE_QUOTES     &kp SV_SQT        &kp SV_CARET        &kp SV_PLUS       &kp SV_MINUS         &kp SV_UNDER              &kp SV_PIPE      &trans                  &trans
+&trans  &kp SV_SECTION       &kp SV_POUND       &kp SV_DOUBLE_QUOTES     &kp SV_SQT        &kp SV_CARET        &kp SV_PLUS       &kp SV_MINUS         &kp SV_UNDER              &kp SV_PIPE      &kp SV_TILDE            &trans
                                                 &trans                   &trans            &trans              &trans            &trans               &trans
             >;
         };
