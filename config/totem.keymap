@@ -51,7 +51,7 @@
     quick-tap-ms = <80>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <230>;
+    tapping-term-ms = <190>;
 };
 
 / {
@@ -192,7 +192,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <230>;
+            tapping-term-ms = <190>;
             quick-tap-ms = <80>;
             require-prior-idle-ms = <120>;
             flavor = "tap-preferred";
@@ -205,7 +205,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <230>;
+            tapping-term-ms = <190>;
             quick-tap-ms = <80>;
             require-prior-idle-ms = <120>;
             flavor = "tap-preferred";
@@ -218,7 +218,7 @@
 
         COLEMAK-DH {
             bindings = <
-           &lt 3 Q       &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U                     &kp Y                      &mt SV_A_RING DELETE
+           &lt 3 Q       &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U                     &kp Y                      &mt DELETE SV_A_RING
            &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &kp T      &kp G        &kp M      &kp N         &hmr RIGHT_SHIFT E        &hmr RIGHT_ALT I           &hmr RCTRL O
 &lt 4 TAB  &none         &kp X            &kp C              &kp D      &kp V        &kp K      &kp H         &mt SV_O_UMLAUT SV_COMMA  &mt SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH          &mt SV_SEMICOLON SV_COLON
                                           &mo 2              &lt 1 ESC  &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &tog 3
