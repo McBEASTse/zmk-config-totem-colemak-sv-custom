@@ -192,11 +192,11 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <230>;
             quick-tap-ms = <80>;
-            require-prior-idle-ms = <300>;
+            require-prior-idle-ms = <120>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <KEYS_R THUMBS 12 11 10 21>;
+            hold-trigger-key-positions = <KEYS_R THUMBS 12 11 10>;
         };
 
         hmr: hmr {
@@ -205,21 +205,24 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <230>;
             quick-tap-ms = <80>;
-            require-prior-idle-ms = <300>;
+            require-prior-idle-ms = <120>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <KEYS_L THUMBS 17 18 19 28 29 9 31>;
+            hold-trigger-key-positions = <KEYS_L THUMBS 17 18 19>;
         };
 
-        comment_or: comment_or {
+        mt: mt {
             compatible = "zmk,behavior-hold-tap";
-            label = "slash_or_comm";
-            bindings = <&comment>, <&kp>;
+            label = "MT";
+            bindings = <&none>, <&none>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <230>;
             flavor = "tap-preferred";
+            hold-trigger-key-positions = <28 29 9 31>;
+            require-prior-idle-ms = <120>;
+            quick-tap-ms = <80>;
         };
     };
 
@@ -228,10 +231,10 @@
 
         COLEMAK-DH {
             bindings = <
-           &lt 3 Q                 &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U                      &kp Y                       &hmr DELETE SV_A_RING
-           &hml LCTRL A            &hml LEFT_ALT R  &hml LEFT_SHIFT S  &kp T      &kp G        &kp M      &kp N         &hmr RIGHT_SHIFT E         &hmr RIGHT_ALT I            &hmr RCTRL O
-&lt 4 TAB  &hml LEFT_COMMAND SV_Z  &kp X            &kp C              &kp D      &kp V        &kp K      &kp H         &hmr SV_O_UMLAUT SV_COMMA  &hmr SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH           &hmr SV_SEMICOLON SV_COLON
-                                                    &mo 2              &lt 1 ESC  &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &tog 3
+           &lt 3 Q                &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U                     &kp Y                      &mt DELETE SV_A_RING
+           &hml LCTRL A           &hml LEFT_ALT R  &hml LEFT_SHIFT S  &kp T      &kp G        &kp M      &kp N         &hmr RIGHT_SHIFT E        &hmr RIGHT_ALT I           &hmr RCTRL O
+&lt 4 TAB  &mt LEFT_COMMAND SV_Z  &kp X            &kp C              &kp D      &kp V        &kp K      &kp H         &mt SV_O_UMLAUT SV_COMMA  &mt SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH          &mt SV_SEMICOLON SV_COLON
+                                                   &mo 2              &lt 1 ESC  &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &tog 3
             >;
         };
 
