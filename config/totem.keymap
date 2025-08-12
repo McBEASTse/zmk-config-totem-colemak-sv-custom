@@ -164,7 +164,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <190>;
             quick-tap-ms = <80>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <90>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <KEYS_R THUMBS 12 11 10>;
         };
@@ -177,7 +177,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <190>;
             quick-tap-ms = <80>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <90>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <KEYS_L THUMBS 17 18 19>;
         };
