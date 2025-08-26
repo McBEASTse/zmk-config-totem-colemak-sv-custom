@@ -48,7 +48,7 @@
 //MAKE_HRM(hml_layer, &mo, &kp, KEYS_R THUMBS) // switch layer like HRM
 
 &mt {
-    quick-tap-ms = <80>;
+    quick-tap-ms = <60>;
     global-quick-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <160>;
@@ -163,9 +163,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <190>;
             quick-tap-ms = <80>;
-            require-prior-idle-ms = <80>;
+            require-prior-idle-ms = <60>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <KEYS_R THUMBS 12 11 10>;
         };
@@ -176,9 +176,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <190>;
             quick-tap-ms = <80>;
-            require-prior-idle-ms = <80>;
+            require-prior-idle-ms = <60>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <KEYS_L THUMBS 17 18 19>;
         };
