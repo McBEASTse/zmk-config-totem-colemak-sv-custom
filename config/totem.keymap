@@ -208,10 +208,10 @@
         Navigation {
             label = "Navigation";
             bindings = <
-        &trans  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &trans  &trans    &none   &kp LG(LC(LEFT_ARROW))  &none     &kp LG(LC(RIGHT_ARROW))  &kp PAGE_UP
-        &trans  &trans                &trans                &trans  &trans    &none   &kp LEFT                &kp DOWN  &kp UP                   &kp RIGHT
-&trans  &trans  &trans                &trans                &trans  &trans    &none   &kp LC(LEFT)            &none     &kp LC(RIGHT)            &kp PAGE_DOWN  &kp CAPSLOCK
-                                      &trans                &trans  &trans    &trans  &trans                  &trans
+        &trans  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &trans  &trans    &none   &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp PAGE_UP
+        &trans  &trans                &trans                &trans  &trans    &none   &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT
+&trans  &trans  &trans                &trans                &trans  &trans    &none   &kp LC(LEFT)      &none             &kp LC(RIGHT)     &kp PAGE_DOWN  &kp CAPSLOCK
+                                      &trans                &trans  &trans    &trans  &trans            &trans
             >;
         };
 
@@ -232,15 +232,6 @@
         &trans      &trans  &trans        &trans      &trans        &kp C_MUTE    &kp C_PP      &trans        &trans      &trans
 &trans  &bt BT_CLR  &trans  &out OUT_TOG  &bt BT_PRV  &bt BT_NXT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &trans   &trans
                             &trans        &trans      &trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
-            >;
-        };
-
-        ProgrammingMac {
-            bindings = <
-        &kp SV_AT            &kp SV_EXCL        &kp SV_DOLLAR            &kp SV_PERCENT    &kp SV_AMPERSAND    &kp SV_EQUAL      &kp SV_ASTERISK      &kp SV_BACKSLASH          &kp SV_QUESTION  &hmr SV_ACUTE GRAVE
-        &kp SV_LEFT_BRACKET  &kp SV_LEFT_BRACE  &kp SV_LEFT_PARENTHESIS  &kp SV_LESS_THAN  &kp SV_FSLH         &kp SV_BACKSLASH  &kp SV_GREATER_THAN  &kp SV_RIGHT_PARENTHESIS  &kp SV_RBRC      &kp SV_RBKT
-&trans  &kp SV_UMLAUT        &kp SV_POUND       &kp SV_DOUBLE_QUOTES     &kp SV_SQT        &kp SV_CARET        &kp SV_PLUS       &kp SV_MINUS         &kp SV_UNDER              &kp SV_PIPE      &kp TILDE            &trans
-                                                &trans                   &trans            &trans              &trans            &trans               &trans
             >;
         };
     };
