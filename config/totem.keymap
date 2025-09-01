@@ -50,7 +50,7 @@
 &mt {
     quick-tap-ms = <60>;
     global-quick-tap;
-    flavor = "tap-preferred";
+    flavor = "balanced";
     tapping-term-ms = <160>;
     require-prior-idle-ms = <40>;
 };
@@ -166,7 +166,7 @@
             tapping-term-ms = <190>;
             quick-tap-ms = <80>;
             require-prior-idle-ms = <60>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             hold-trigger-key-positions = <KEYS_R THUMBS 12 11 10>;
         };
 
@@ -179,7 +179,7 @@
             tapping-term-ms = <190>;
             quick-tap-ms = <80>;
             require-prior-idle-ms = <60>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             hold-trigger-key-positions = <KEYS_L THUMBS 17 18 19>;
         };
     };
