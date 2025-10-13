@@ -163,9 +163,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick-tap-ms = <80>;
-            require-prior-idle-ms = <40>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_R THUMBS 12 11 10>;
         };
@@ -176,9 +176,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick-tap-ms = <80>;
-            require-prior-idle-ms = <40>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_L THUMBS 17 18 19>;
         };
@@ -187,20 +187,20 @@
     keymap {
         compatible = "zmk,keymap";
 
-        COLEMAK-DH {
+        Colemak-DH {
             bindings = <
-           &kp Q              &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U                     &kp Y                      &mt DELETE SV_A_RING
+           &kp Q              &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U                     &kp Y                      &kp SV_A_RING
            &hml LCTRL A       &hml LEFT_ALT R  &hml LEFT_SHIFT S  &lt 3 T    &kp G        &kp M      &kp N         &hmr RIGHT_SHIFT E        &hmr LEFT_ALT I            &hmr RCTRL O
-&lt 4 TAB  &mt LEFT_WIN SV_Z  &kp X            &kp C              &kp D      &kp V        &kp K      &kp H         &mt SV_O_UMLAUT SV_COMMA  &mt SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH          &mt SV_SEMICOLON SV_COLON
+&lt 4 TAB  &mt LEFT_WIN SV_Z  &kp X            &kp C              &kp D      &kp V        &kp K      &kp H         &mt SV_O_UMLAUT SV_COMMA  &mt SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH   &mt SV_SEMICOLON SV_COLON
                                                &mo 2              &lt 1 ESC  &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &kp BACKSPACE
             >;
         };
 
-        ProgrammingWin {
+        SpecialCharacters {
             bindings = <
         &kp SV_AT            &kp SV_EXCL        &kp SV_DOLLAR            &kp SV_PERCENT    &kp SV_AMPERSAND    &kp SV_EQUAL      &kp SV_ASTERISK      &kp SV_BACKSLASH          &kp SV_QUESTION  &hmr SV_GRAVE SV_ACUTE
         &kp SV_LEFT_BRACKET  &kp SV_LEFT_BRACE  &kp SV_LEFT_PARENTHESIS  &kp SV_LESS_THAN  &kp SV_FSLH         &kp SV_BACKSLASH  &kp SV_GREATER_THAN  &kp SV_RIGHT_PARENTHESIS  &kp SV_RBRC      &kp SV_RBKT
-&trans  &kp SV_SECTION       &kp SV_POUND       &kp SV_DOUBLE_QUOTES     &kp SV_SQT        &kp SV_CARET        &kp SV_PLUS       &kp SV_MINUS         &kp SV_UNDER              &kp SV_PIPE      &kp SV_TILDE            &trans
+&trans  &kp SV_SECTION       &kp SV_POUND       &kp SV_DOUBLE_QUOTES     &kp SV_SQT        &kp SV_CARET        &kp SV_PLUS       &kp SV_MINUS         &kp SV_UNDER              &kp SV_PIPE      &kp SV_TILDE            &kp DELETE
                                                 &trans                   &trans            &trans              &trans            &trans               &trans
             >;
         };
@@ -215,7 +215,7 @@
             >;
         };
 
-        digits {
+        Digits {
             label = "Digits";
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &kp SV_PLUS   &kp N7  &kp N8  &kp N9  &kp SV_SEMICOLON
@@ -225,7 +225,7 @@
             >;
         };
 
-        sim_layer {
+        SimLayer {
             label = "SYSTEM";
             bindings = <
         &kp F1      &kp F2  &kp F3        &kp F4      &kp F5        &kp F6        &kp F7        &kp F8        &kp F9      &kp F10
