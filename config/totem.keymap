@@ -56,8 +56,8 @@
 };
 
 &lt {
-    require-prior-idle-ms = <0>;
-    flavor = "hold-preferred";
+    require-prior-idle-ms = <40>;
+    flavor = "balanced";
 };
 
 / {
