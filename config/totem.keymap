@@ -171,10 +171,10 @@
 
         Colemak-DH {
             bindings = <
-           &kp Q              &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U                     &kp Y                      &kp SV_A_RING
-           &hml LCTRL A       &hml LEFT_ALT R  &hml LEFT_SHIFT S  &lt 3 T    &kp G        &kp M      &kp N         &hmr RIGHT_SHIFT E        &hmr LEFT_ALT I            &hmr RCTRL O
-&lt 4 TAB  &mt LEFT_WIN SV_Z  &kp X            &kp C              &kp D      &kp V        &kp K      &kp H         &mt SV_O_UMLAUT SV_COMMA  &mt SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH   &mt SV_SEMICOLON SV_COLON
-                                               &mo 2              &lt 1 ESC  &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &kp BACKSPACE
+           &kp Q         &kp W            &kp F              &kp P      &kp B        &kp J      &kp L         &kp U                     &kp Y                      &kp SV_A_RING
+           &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &lt 3 T    &kp G        &kp M      &kp N         &hmr RIGHT_SHIFT E        &hmr LEFT_ALT I            &hmr RCTRL O
+&lt 4 TAB  &kp Z         &kp X            &kp C              &kp D      &kp V        &kp K      &kp H         &mt SV_O_UMLAUT SV_COMMA  &mt SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH   &mt SV_SEMICOLON SV_COLON
+                                          &mo 2              &lt 1 ESC  &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &kp BACKSPACE
             >;
         };
 
