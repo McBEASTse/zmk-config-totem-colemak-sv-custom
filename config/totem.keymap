@@ -131,8 +131,8 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <220>;
+            flavor = "balanced";
+            tapping-term-ms = <160>;
             hold-trigger-key-positions = <12 17>;
             require-prior-idle-ms = <10>;
         };
