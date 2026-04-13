@@ -48,7 +48,6 @@
 //MAKE_HRM(hml_layer, &mo, &kp, KEYS_R THUMBS) // switch layer like HRM
 
 &mt {
-    quick-tap-ms = <55>;
     global-quick-tap;
     flavor = "balanced";
     tapping-term-ms = <120>;
@@ -110,11 +109,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <220>;
             require-prior-idle-ms = <35>;
             flavor = "balanced";
-            hold-trigger-key-positions = <KEYS_R THUMBS 12 11 10>;
+            hold-trigger-key-positions = <KEYS_R THUMBS 12 10>;
         };
 
         hmr: hmr {
@@ -123,11 +121,21 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <220>;
             require-prior-idle-ms = <35>;
             flavor = "balanced";
-            hold-trigger-key-positions = <KEYS_L THUMBS 17 18 19>;
+            hold-trigger-key-positions = <KEYS_L THUMBS 17 19>;
+        };
+
+        hold_shift: hold_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            hold-trigger-key-positions = <12 17>;
         };
     };
 
@@ -136,10 +144,10 @@
 
         Colemak-DH {
             bindings = <
-           &kp Q           &kp W            &kp F              &kp P    &kp B        &kp J      &kp L         &kp U                     &kp Y                      &kp SV_A_RING
-           &hml LCTRL A    &hml LEFT_ALT R  &hml LEFT_SHIFT S  &lt 3 T  &kp G        &kp M      &kp N         &hmr RIGHT_SHIFT E        &hmr RIGHT_ALT I           &hmr RCTRL O
-&lt 4 TAB  &mt LEFT_WIN Z  &kp X            &kp C              &kp D    &kp V        &kp K      &kp H         &mt SV_O_UMLAUT SV_COMMA  &mt SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH   &mt SV_SEMICOLON SV_COLON
-                                            &mo 2              &mo 1    &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &kp BACKSPACE
+           &kp Q           &kp W            &kp F                     &kp P    &kp B        &kp J      &kp L         &kp U                      &kp Y                      &kp SV_A_RING
+           &hml LCTRL A    &hml LEFT_ALT R  &hold_shift LEFT_SHIFT S  &lt 3 T  &kp G        &kp M      &kp N         &hold_shift RIGHT_SHIFT E  &hmr RIGHT_ALT I           &hmr RCTRL O
+&lt 4 TAB  &mt LEFT_WIN Z  &kp X            &kp C                     &kp D    &kp V        &kp K      &kp H         &mt SV_O_UMLAUT SV_COMMA   &mt SV_A_UMLAUT SV_PERIOD  &kp SV_SLASH   &mt SV_SEMICOLON SV_COLON
+                                            &mo 2                     &mo 1    &kp SPACE    &kp ENTER  &lt 1 ESCAPE  &kp BACKSPACE
             >;
         };
 
