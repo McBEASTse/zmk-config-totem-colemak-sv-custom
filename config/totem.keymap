@@ -109,8 +109,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            require-prior-idle-ms = <35>;
+            tapping-term-ms = <150>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_R THUMBS 12 10>;
         };
@@ -121,8 +120,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            require-prior-idle-ms = <35>;
+            tapping-term-ms = <150>;
             flavor = "balanced";
             hold-trigger-key-positions = <KEYS_L THUMBS 17 19>;
         };
@@ -134,7 +132,7 @@
 
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <220>;
             hold-trigger-key-positions = <12 17>;
         };
     };
